@@ -1,0 +1,341 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+h1 {
+  background: #2563eb;
+  color: white;
+  padding: 24px 32px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Todo Section */
+.todo-section {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.todo-container {
+  padding: 24px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.todo-form button {
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.todo-form button:hover {
+  background: #1d4ed8;
+}
+
+.todo-list {
+  margin-bottom: 24px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background: #f3f4f6;
+}
+
+.todo-item span {
+  flex: 1;
+  color: #374151;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.todo-status {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f3f4f6;
+}
+
+.todo-status p {
+  margin: 4px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Course Section */
+.course-section {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #e5e7eb;
+}
+
+.course-left, .course-right {
+  background: white;
+  padding: 24px;
+}
+
+/* Course Form */
+.course-form {
+  margin-bottom: 32px;
+}
+
+.course-form h3 {
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.course-form button {
+  width: 100%;
+  padding: 12px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.course-form button:hover {
+  background: #059669;
+}
+
+/* Course List */
+.course-list h3 {
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Enhanced Available and Selected Courses containers */
+.available-courses, .selected-courses {
+  background: #ffffff; /* พื้นหลังขาว */
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 24px;
+}
+
+/* Enhanced Course Items */
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #ffffff; /* พื้นหลังขาวชัด */
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; /* เส้นขอบเข้มขึ้น */
+  transition: background-color 0.2s;
+}
+
+.course-item:hover {
+  background: #f0f2f5; /* เทาเข้มขึ้นตอน hover */
+}
+
+.course-item span,
+.course-item .course-name {
+  color: #111827; /* ตัวอักษรเข้มขึ้น */
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.course-item .course-credits {
+  color: #374151; /* เทาเข้มขึ้น */
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.course-item button {
+  padding: 6px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+/* Improved disabled button styling for better contrast */
+.course-item button:disabled {
+  background: #6b7280;
+  color: #ffffff;
+  cursor: not-allowed;
+  border: 1px solid #4b5563;
+}
+
+.course-item button:not(:disabled):hover {
+  background: #1d4ed8;
+}
+
+/* Course Drop */
+.course-drop h3 {
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.course-summary {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #f3f4f6;
+}
+
+.summary-item {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #374151;
+}
+
+.registered-courses {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.registered-courses table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Enhanced Table Headers and Cells */
+.registered-courses th, 
+.registered-courses td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #111827; /* ตัวอักษรเข้ม */
+}
+
+.registered-courses th {
+  background: #ffffff; /* พื้นหลังหัวตารางขาว */
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.registered-courses tr:last-child td {
+  border-bottom: none;
+}
+
+.registered-courses tbody tr:hover {
+  background: #f9fafb;
+}
+
+hr {
+  margin: 32px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
